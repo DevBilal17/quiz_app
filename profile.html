@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App | Profile</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="/css/profile.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="left">
+        <!-- Menu Btn -->
+        <button>
+          <img src="/assets/icons/menus.png" alt="" />
+        </button>
+        <!-- Brand Name,Logo -->
+        <div class="logo">
+          <img src="./assets/icons/logo.png" alt="logo" />
+          <p>QuizMaster</p>
+        </div>
+      </div>
+
+      <div class="right">
+        <!-- Navigation Bar -->
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Quizzes</a></li>
+            <li><a href="#">Leaderboard</a></li>
+            <li><a href="#">Profile</a></li>
+          </ul>
+        </nav>
+        <!-- Notification Bell -->
+        <div class="notification">
+          <div class="bell">
+            <img src="/assets/icons/bell.png" alt="brll-icon" />
+          </div>
+        </div>
+
+        <!-- Profile -->
+        <div class="profile">
+          <div class="profile-img">
+            <img src="/assets/images/profile-img.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="profile">
+        <div class="top">
+          <form>
+            <label for="profileImg"> H </label>
+            <input type="file" id="profileImg" hidden />
+          </form>
+          <div class="about">
+            <h3>Sophia Bennett</h3>
+            <p>Quiz Enthusiast</p>
+            <p>Joined 2021</p>
+          </div>
+        </div>
+
+        <div class="tabs">
+          <ul>
+            <li>Activity</li>
+            <li class="active">Profile</li>
+          </ul>
+        </div>
+
+        <!-- Tabs Content -->
+        <div class="tabs-content">
+          <div class="tab">
+            <!-- Personal Info -->
+            <div>
+              <h2>Personal Information</h2>
+              <div class="content">
+                <!-- Row 1 -->
+                <div class="content-row">
+                  <!-- Name -->
+                  <div class="content-box">
+                    <h4>Name</h4>
+                    <p>Sophia Bennett</p>
+                  </div>
+
+                  <!-- Email -->
+                  <div class="content-box">
+                    <h4>Email</h4>
+                    <p>sophia.bennett@email.com</p>
+                  </div>
+                </div>
+
+                <!-- Row 2 -->
+                <div class="content-row">
+                  <!-- Bio -->
+                  <div class="content-box">
+                    <h4>Bio</h4>
+                    <p>
+                      Avid quiz taker and trivia lover. Always up for a
+                      challenge!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Quiz History -->
+            <div>
+              <h2>Quiz History</h2>
+              <div class="quiz-table-container">
+                <table>
+                    <tr>
+                        <th>Quiz Name</th>
+                        <th>Score</th>
+                        <th>Date</th>
+                    </tr>
+                    <tr>
+                        <td>General Knowledge</td>
+                        <td><p>85/100</p></td>
+                        <td><p>2023-08-15</p></td>
+                    </tr>
+
+                     <tr>
+                        <td>General Knowledge</td>
+                        <td><p>85/100</p></td>
+                        <td><p>2023-08-15</p></td>
+                    </tr>
+
+                     <tr>
+                        <td>General Knowledge</td>
+                        <td><p>85/100</p></td>
+                        <td><p>2023-08-15</p></td>
+                    </tr>
+
+                     <tr>
+                        <td>General Knowledge</td>
+                        <td><p>85/100</p></td>
+                        <td><p>2023-08-15</p></td>
+                    </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="/js/script.js"></script>
+  </body>
+</html>
