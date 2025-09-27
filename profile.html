@@ -64,13 +64,51 @@
 
         <div class="tabs">
           <ul>
-            <li>Activity</li>
-            <li class="active">Profile</li>
+            <li class="active" data-t="activity">Activity</li>
+            <li data-t="profile">Profile</li>
           </ul>
         </div>
 
         <!-- Tabs Content -->
         <div class="tabs-content">
+          <div class="tab active">
+            <!-- Quiz History -->
+            <div>
+              <h2>Quiz History</h2>
+              <div class="quiz-table-container">
+                <table>
+                  <tr>
+                    <th>Quiz Name</th>
+                    <th>Score</th>
+                    <th>Date</th>
+                  </tr>
+                  <tr>
+                    <td>General Knowledge</td>
+                    <td><p>85/100</p></td>
+                    <td><p>2023-08-15</p></td>
+                  </tr>
+
+                  <tr>
+                    <td>General Knowledge</td>
+                    <td><p>85/100</p></td>
+                    <td><p>2023-08-15</p></td>
+                  </tr>
+
+                  <tr>
+                    <td>General Knowledge</td>
+                    <td><p>85/100</p></td>
+                    <td><p>2023-08-15</p></td>
+                  </tr>
+
+                  <tr>
+                    <td>General Knowledge</td>
+                    <td><p>85/100</p></td>
+                    <td><p>2023-08-15</p></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
           <div class="tab">
             <!-- Personal Info -->
             <div>
@@ -109,34 +147,34 @@
               <h2>Quiz History</h2>
               <div class="quiz-table-container">
                 <table>
-                    <tr>
-                        <th>Quiz Name</th>
-                        <th>Score</th>
-                        <th>Date</th>
-                    </tr>
-                    <tr>
-                        <td>General Knowledge</td>
-                        <td><p>85/100</p></td>
-                        <td><p>2023-08-15</p></td>
-                    </tr>
+                  <tr>
+                    <th>Quiz Name</th>
+                    <th>Score</th>
+                    <th>Date</th>
+                  </tr>
+                  <tr>
+                    <td>General Knowledge</td>
+                    <td><p>85/100</p></td>
+                    <td><p>2023-08-15</p></td>
+                  </tr>
 
-                     <tr>
-                        <td>General Knowledge</td>
-                        <td><p>85/100</p></td>
-                        <td><p>2023-08-15</p></td>
-                    </tr>
+                  <tr>
+                    <td>General Knowledge</td>
+                    <td><p>85/100</p></td>
+                    <td><p>2023-08-15</p></td>
+                  </tr>
 
-                     <tr>
-                        <td>General Knowledge</td>
-                        <td><p>85/100</p></td>
-                        <td><p>2023-08-15</p></td>
-                    </tr>
+                  <tr>
+                    <td>General Knowledge</td>
+                    <td><p>85/100</p></td>
+                    <td><p>2023-08-15</p></td>
+                  </tr>
 
-                     <tr>
-                        <td>General Knowledge</td>
-                        <td><p>85/100</p></td>
-                        <td><p>2023-08-15</p></td>
-                    </tr>
+                  <tr>
+                    <td>General Knowledge</td>
+                    <td><p>85/100</p></td>
+                    <td><p>2023-08-15</p></td>
+                  </tr>
                 </table>
               </div>
             </div>
@@ -146,5 +184,27 @@
     </main>
 
     <script src="/js/script.js"></script>
+
+    <script>
+      var tabs = document.querySelectorAll(".tabs ul li");
+      var tabContent = document.querySelectorAll(".tab");
+      tabs.forEach((tab, index) => {
+        tab.addEventListener("click", function () {
+          
+          if(this.getAttribute('data-t') === 'activity'){
+            tabs.forEach((tab)=> tab.classList.remove('active'))
+            this.classList.add('active')  
+          }
+          else if(this.getAttribute('data-t') === 'profile'){
+            tabs.forEach((tab)=> tab.classList.remove('active'))
+            this.classList.add('active')  
+          }
+          tabContent.forEach((t, i) => {
+            console.log(`Content ${i} Tab ${index}`)
+            t.classList.toggle("active", i === index);
+          });
+        });
+      });
+    </script>
   </body>
 </html>
