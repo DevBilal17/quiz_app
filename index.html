@@ -1,11 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="left">
+        <!-- Menu Btn -->
+         <button>
+             <img src="/assets/icons/menus.png" alt="">
+         </button>
+        <!-- Brand Name,Logo -->
+      <div class="logo">
+        <img src="./assets/icons/logo.png" alt="logo" />
+        <p>QuizMaster</p>
+      </div>
+      </div>
+
+      <div class="right">
+        <!-- Navigation Bar -->
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Quizzes</a></li>
+            <li><a href="#">Leaderboard</a></li>
+            <li><a href="#">Profile</a></li>
+          </ul>
+        </nav>
+        <!-- Notification Bell -->
+        <div class="notification">
+          <div class="bell">
+            <img src="/assets/icons/bell.png" alt="brll-icon" />
+          </div>
+        </div>
+
+        <!-- Profile -->
+        <div class="profile">
+          <div class="profile-img">
+            <img src="/assets/images/profile-img.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="hero">
+        <div class="overlay"></div>
+        <div class="content">
+          <h1>Welcome to QuizMaster</h1>
+          <p>
+            Test your knowledge with our engaging quizzes. Compete with friends
+            and climb the leaderboard. Start your quiz journey today!
+          </p>
+          <div class="btn">
+            <a href="#">Get Started</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features Section -->
+      <section id="features">
+        <div class="head">
+          <h2>Key Features</h2>
+          <p>
+            Explore the exciting features that make QuizMaster the ultimate quiz
+            app.
+          </p>
+        </div>
+        <div class="features">
+          <div class="feature">
+            <img src="/assets/icons/stopwatch.png" alt="" />
+            <div class="content">
+              <h3>Timed Quizzes</h3>
+              <p>
+                Challenge yourself with timed quizzes to test your speed and
+                accuracy.
+              </p>
+            </div>
+          </div>
+
+
+          <div class="feature">
+            <img src="/assets/icons/trophy.png" alt="" />
+            <div class="content">
+              <h3>Leaderboard</h3>
+              <p>
+               Compete with friends and other users to see who can achieve the highest scores.
+              </p>
+            </div>
+          </div>
+
+
+
+          <div class="feature">
+            <img src="/assets/icons/chart.png" alt="" />
+            <div class="content">
+              <h3>Progress Tracking</h3>
+              <p>
+               Track your progress and see how you improve over time with detailed performance reports.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+    <script src="/js/script.js"></script>
+  </body>
 </html>

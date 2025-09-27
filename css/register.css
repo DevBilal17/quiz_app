@@ -1,0 +1,89 @@
+
+:root{
+    --gray-1 : #E5E8EB;
+    --gray-2 : #F0F2F5;
+    --gray-3 : #DBE0E5;
+    --gray-4 : #61738A;
+    --black-1 : #121417;
+    --blue-1 :#0D78F2;
+}
+
+
+
+#register{
+    padding: 20px 0 ;
+}
+
+#register h2{
+    padding: 2rem 1.6rem;
+    text-align: center;
+    color: var(--black-1);
+    font-weight: 700;
+    font-size: 2.8rem;
+    line-height: 3.5rem;
+}
+
+form {
+    max-width: 480px;
+    margin: 0 auto;
+    width: 100%;
+}
+form input  {
+    margin: 1.2rem 1.6rem;
+    border: 1px solid var(--gray-3);
+    padding: 1.5rem;
+    border-radius: 8px;
+    height: 56px;
+    width: 100%;
+    
+    outline: none;
+    
+    color: var(--gray-4);
+}
+
+input::placeholder{
+    color: var(--gray-4);
+}
+
+.forgot{
+    padding:1.2rem 1.6rem;
+    color: var(--gray-4);
+    font-size: 14px;
+    line-height: 21px;
+}
+
+
+form button{
+    margin: 1.2rem 1.6rem;
+    border: none;
+    outline: none;
+    padding: 1.5rem;
+    border-radius: 8px;
+    height: 56px;
+    width: 100%;
+    background-color: var(--blue-1);
+    color: #fff;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 700;
+}
+
+.asking{
+    
+    padding: 4px 16px 12px;
+
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+
+    color: var(--gray-4);
+}
+
+.asking a{
+    text-decoration: none;
+    color: var(--gray-4);
+}
+
+.asking a:hover {
+    text-decoration: underline;
+}
