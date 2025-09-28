@@ -4,8 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz App | Result</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/result.css">
 </head>
 <body>
+      <!-- Header -->
+    <header>
+      <div class="left">
+        <!-- Menu Btn -->
+        <button>
+          <img src="/assets/icons/menus.png" alt="" />
+        </button>
+        <!-- Brand Name,Logo -->
+        <div class="logo">
+          <img src="./assets/icons/logo.png" alt="logo" />
+          <p>QuizMaster</p>
+        </div>
+      </div>
+
+      <div class="right">
+        <!-- Navigation Bar -->
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Quizzes</a></li>
+            <li><a href="#">Leaderboard</a></li>
+            <li><a href="#">Profile</a></li>
+          </ul>
+        </nav>
+        <!-- Notification Bell -->
+        <div class="notification">
+          <div class="bell">
+            <img src="/assets/icons/bell.png" alt="brll-icon" />
+          </div>
+        </div>
+
+        <!-- Profile -->
+        <div class="profile">
+          <div class="profile-img">
+            <img src="/assets/images/profile-img.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </header>
     
+    <main>
+        <section id="result">
+            <h2>Quiz Results</h2>
+            <div class="progress-bar-container">
+                <div class="text">
+                    <h3>Quiz Completed</h3>
+                    <p>100%</p>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+
+            <!-- Score Container -->
+            <div class="score-container">
+                <p>Score</p>
+                <p class="score">8/10</p>
+            </div>
+
+
+            <p class="congrats-para">
+                Congratulations, Sarah! You've completed the quiz with a score of 8 out of 10. Your performance indicates a strong understanding of the subject matter. Keep up the excellent work!
+            </p>
+
+            <div class="btns">
+                <a href="review.html" id="review">
+                Review Answers
+            </a>
+            <a href="quizzes.html" id="another">
+                Take Anohter Quiz
+            </a>
+            </div>
+        </section>
+    </main>
+
+
+
+    <script src="/js/script.js"></script>
 </body>
 </html>
