@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App | Quiz</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="/css/quiz.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="left">
+        <!-- Menu Btn -->
+        <button>
+          <img src="/assets/icons/menus.png" alt="" />
+        </button>
+        <!-- Brand Name,Logo -->
+        <div class="logo">
+          <img src="./assets/icons/logo.png" alt="logo" />
+          <p>QuizMaster</p>
+        </div>
+      </div>
+
+      <div class="right">
+        <!-- Navigation Bar -->
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Quizzes</a></li>
+            <li><a href="#">Leaderboard</a></li>
+            <li><a href="#">Profile</a></li>
+          </ul>
+        </nav>
+        <!-- Notification Bell -->
+        <div class="notification">
+          <div class="bell">
+            <img src="/assets/icons/bell.png" alt="brll-icon" />
+          </div>
+        </div>
+
+        <!-- Profile -->
+        <div class="profile">
+          <div class="profile-img">
+            <img src="/assets/images/profile-img.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="quiz">
+        <div class="progress-bar-container">
+          <h4>Progress</h4>
+          <div class="progress-bar">
+            <div class="progress"></div>
+          </div>
+          <p>Question 1 of 4</p>
+        </div>
+
+        <!-- Timer Container -->
+        <div class="timer-container">
+          <div class="time">
+            <div class="hours">00</div>
+            <p>Hours</p>
+          </div>
+
+          <div class="time">
+            <div class="min">00</div>
+            <p>Minutes</p>
+          </div>
+
+          <div class="time">
+            <div class="sec">00</div>
+            <p>Seconds</p>
+          </div>
+        </div>
+
+        <!-- Quiz Questions Container -->
+        <div class="quiz-questions-container">
+          <div class="quiz">
+            <h2 class="question">What is the capital of France?</h2>
+            <form>
+              <label for="first">
+                <input type="radio" name="answer" id="first" />
+                <div class="radio-btn"></div>
+                London
+              </label>
+
+              <label for="second">
+                <input type="radio" name="answer" id="second" />
+                <div class="radio-btn"></div>
+                London
+              </label>
+
+              <label for="third">
+                <input type="radio" name="answer" id="third" />
+                <div class="radio-btn"></div>
+                London
+              </label>
+
+              <label for="fourth">
+                <input type="radio" name="answer" id="fourth" />
+                <div class="radio-btn"></div>
+                London</label
+              >
+
+
+              <!-- Buttons -->
+              <div class="btns">
+                <button id="prev">
+                    Previous
+                </button>
+                <button id="next">
+                    Next
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        
+      </section>
+    </main>
+
+    <script src="/js/script.js"></script>
+  </body>
+</html>
