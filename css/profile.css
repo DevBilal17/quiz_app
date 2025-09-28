@@ -33,6 +33,12 @@
     cursor: pointer;
 }
 
+#profile .top label img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
 #profile .top label::after{
   content: "+";
   height: 0;
